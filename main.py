@@ -1,5 +1,5 @@
-import game
+import rivalBattle
 def main():
-    game.runGame()
+    rivalBattle.rivalBattle()
 
 main()
