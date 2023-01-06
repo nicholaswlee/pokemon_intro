@@ -1,0 +1,92 @@
+{
+    "dialogue" : [
+        {
+            "type" : "text_vars",
+            "value": "RIVAL_NAME: Hey PLAYER_NAME! You're late. Come here",
+            "variables": [
+                "PLAYER_NAME",
+                "RIVAL_NAME"
+            ]
+
+        },
+        {
+            "type" : "text_var",
+            "value": "Professor Spruce: Welcome PLAYER_NAME. You're just in time.",
+            "variable": "PLAYER_NAME"
+        },
+        {
+            "type" : "text",
+            "value": "We were about to start. As with all new Pokemon Trainers, it is "
+        },
+        {
+            "type" : "text",
+            "value": "time to pick your starter Pokemon. Here are your options:"
+        },
+        {
+            "type" : "text",
+            "value": "\tBulbasaur, the seed Pokemon"
+
+        },
+        {
+            "type" : "text",
+            "value": "\tCharmander, the lizard Pokemon"
+
+        },
+        {
+            "type" : "text",
+            "value": "\tSquirtle, the tiny turtle Pokemon"
+
+        },
+        {
+            "type" : "text_tree_key_var",
+            "value": "Professor Spruce: What starter would you like? \n\t1. Bulbasaur\n\t2. Charmander\n\t3. Squirtle\nPlease select a number:",
+            "variable": "STARTER_NAME",
+            "tree":[
+                {
+                    "choice": "1",
+                    "value": "bulbasaur" 
+                },
+                {
+                    "choice": "2",
+                    "value": "charmander" 
+                },
+                {
+                    "choice": "3",
+                    "value": "squirtle" 
+                }
+            ]
+        },
+        {
+            "type" : "text_var",
+            "value": "Professor Spruce: Great, RIVAL_NAME it's your turn",
+            "variable": "RIVAL_NAME"
+        },
+        {
+            "type" : "text_vars",
+            "value": "RIVAL_NAME: Awesome. I choose RIVAL_STARTER_NAME",
+            "variables": [
+                "RIVAL_NAME",
+                "RIVAL_STARTER_NAME"
+            ]
+        },
+        {
+            "type" : "text_vars",
+            "value": "RIVAL_NAME: PLAYER_NAME let's battle. I think this is a great way to train",
+            "variables": [
+                "RIVAL_NAME",
+                "PLAYER_NAME"
+            ]
+        },
+        {
+            "type" : "text_var",
+            "value": "Professor Spruce: That's a great idea!",
+            "variable": "RIVAL_STARTER_NAME"
+        },
+        {
+            "type" : "text_var",
+            "value": "RIVAL_NAME challenges you to a battle!",
+            "variable": "RIVAL_NAME"
+        }
+
+    ]
+}

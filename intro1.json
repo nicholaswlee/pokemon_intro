@@ -1,0 +1,57 @@
+{
+    "dialogue" : [
+        {
+            "type" : "text",
+            "value": "UNKNOWN: Welcome to the world of Pokemon!"
+
+        },
+        {
+            "type" : "text",
+            "value": "UNKNOWN: I am Professor Spruce, ths professor of the Washton Region"
+
+        },
+        {
+            "type" : "text",
+            "value": "Professor Spruce: Pokemon are marvelous creatues that live in our world"
+
+        },
+        {
+            "type" : "text",
+            "value": ". . ."
+
+        },
+        {
+            "type" : "text",
+            "value": "Professor Spruce: This is Pikachu, the electric mouse pokemon"
+        },
+        {
+            "type" : "text",
+            "value": "Pikachu: Pika, pi!"
+        },
+        {
+            "type": "text",
+            "value" : "This is your rival"
+        },
+        {
+            "type": "text_key_var_set",
+            "value": "I seem to have forgotten his name. What is it: ",
+            "variable": "RIVAL_NAME"
+        },
+        {
+            "type": "text_var",
+            "value": "Ah yes, RIVAL_NAME. That's right",
+            "variable": "RIVAL_NAME"
+        },
+        {
+            "type" : "text_key_var_set",
+            "value": "And what's your name? ",
+            "variable": "PLAYER_NAME"
+        },
+        {
+            "type": "text_var",
+            "value": "PLAYER_NAME. That's right! Your journey begins now...",
+            "variable": "PLAYER_NAME",
+            "seconds": 0.1
+        }
+    ]
+}

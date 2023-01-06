@@ -1,0 +1,95 @@
+{
+    "bulbasaur" : {
+        "name" : "Bulbasaur",
+        "type1" : "grass",
+        "type2" : "poison",
+        "moves" : [
+            {
+                "level_learned" : 1,
+                "name" : "tackle"
+            },
+            {
+                "level_learned" : 1,
+                "name" : "growl"
+            },
+            {
+                "level_learned" : 3,
+                "name" : "vine_whip"
+            },
+            {
+                "level_learned" : 6,
+                "name" : "growth"
+            }
+        ],
+        "stats" : {
+            "hp" : 45,
+            "physAtk" : 49,
+            "physDef" : 49,
+            "specialAtk" : 69,
+            "specialDef" : 69,
+            "spd" : 45
+        }
+    },
+    "charmander" : {
+        "name" : "Charmander",
+        "type1" : "fire",
+        "type2" : null,
+        "moves" : [
+            {
+                "level_learned" : 1,
+                "name" : "scratch"
+            },
+            {
+                "level_learned" : 1,
+                "name" : "leer"
+            },
+            {
+                "level_learned" : 4,
+                "name" : "ember"
+            },
+            {
+                "level_learned" : 12,
+                "name" : "dragon_breath"
+            }
+        ],
+        "stats" : {
+            "hp" : 39,
+            "physAtk" : 52,
+            "physDef" : 43,
+            "specialAtk" : 60,
+            "specialDef" : 50,
+            "spd" : 65
+        }
+    },
+    "squirtle": {
+        "name" : "Squirtle",
+        "type1" : "water",
+        "type2" : null,
+        "moves" : [
+            {
+                "level_learned" : 1,
+                "name" : "tackle"
+            },
+            {
+                "level_learned" : 1,
+                "name" : "tail_whip"
+            },
+            {
+                "level_learned" : 4,
+                "name" : "water_gun"
+            },
+            {
+                "level_learned" : 12,
+                "name" : "withdraw"
+            }
+        ],
+        "stats" : {
+            "hp" : 44,
+            "physAtk" : 68,
+            "physDef" : 65,
+            "specialAtk" : 50,
+            "specialDef" : 64,
+            "spd" : 63
+        }
+    }
+}

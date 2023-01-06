@@ -1,0 +1,72 @@
+{
+    "dialogue" : [
+        {
+            "type" : "text",
+            "value": "RADIO: It's looking like another beautiful day in Sea Town!"
+
+        },
+        {
+            "type" : "text",
+            "value": "RADIO: A storm was headed our way, but luckily Landorous has made that clear"
+
+        },
+        {
+            "type" : "text",
+            "value": ". . ."
+
+        },
+        {
+            "type" : "text_var",
+            "value": "Mom: PLAYER_NAME, hurry you are going to be late!",
+            "variable": "PLAYER_NAME"
+
+        },
+        {
+            "type" : "text",
+            "value": "You go downstairs."
+        },
+        {
+            "type" : "text_tree",
+            "value": "Mom: Are you ready for your journey?\n\t1. Yes\n\t2. No\nSelect a number: ",
+            "tree": [
+                {
+                    "choice": "1",
+                    "path": [
+                        {
+                            "type": "text",
+                            "value": "Mom: That's great! It will be so exciting!"
+                        }
+                    ]
+                    
+                },
+                {
+                    "choice": "2",
+                    "path" : [
+                        {
+                            "type": "text",
+                            "value": "Mom: Don't worry about it! This will be so exciting!"
+                        }
+                    ]
+
+                }
+            ]
+        },
+        {
+            "type" : "text",
+            "value": "Mom: Here's a pair running shoes. You better hurry to the Professor's office before it's too late."
+        },
+        {
+            "type" : "text",
+            "value": "Mom: Okay bye! Have fun on your adventure!"
+        },
+        {
+            "type" : "text",
+            "value": "You exit and go to Professor's Lab"
+        },
+        {
+            "type" : "text",
+            "value": ". . ."
+        }
+
+    ]
+}

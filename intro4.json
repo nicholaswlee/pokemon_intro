@@ -1,0 +1,180 @@
+{
+    "dialogue" : [
+        {
+            "type" : "text_tree_conditional_key_var",
+            "tree": [
+                {
+                    "value" : 1,
+                    "path": [
+                        {
+                            "type" : "text_vars",
+                            "value": "RIVAL_NAME: Damn I lost. Nice job PLAYER_NAME",
+                            "variables" : ["RIVAL_NAME", 
+                            "PLAYER_NAME"]
+                        },
+                        {
+                            "type" : "text_vars",
+                            "value": "RIVAL_NAME: Whatever, RIVAL_STARTER_NAME and I are just going to train harder",
+                            "variables" : ["RIVAL_NAME", 
+                            "RIVAL_STARTER_NAME"]
+                        }
+                    ]
+                },
+                {
+                    "value" : 2,
+                    "path": [
+                        {
+                            "type" : "text_vars",
+                            "value": "RIVAL_NAME: Let's go!!! Nice job RIVAL_STARTER_NAME",
+                            "variables" : ["RIVAL_NAME", 
+                            "RIVAL_STARTER_NAME"]
+                        },
+                        {
+                            "type" : "text_vars",
+                            "value": "RIVAL_NAME: It's okay PLAYER_NAME. It was your first time battling",
+                            "variables" : ["RIVAL_NAME", 
+                            "PLAYER_NAME"]
+                        }
+                    ]
+                }
+            ],
+            "variable" : "RESULT"
+
+        },
+        {
+            "type" : "text",
+            "value": "Professor Spruce: That was a wonderful battle you two. Especially for your first time"
+        },
+        {
+            "type" : "text",
+            "value": "Professor Spruce: Now that you both have some battling experience,\nI recommend you all catch some Pokemon in Route 1"
+        },
+        {
+            "type" : "text_var",
+            "value": "RIVAL_NAME: Oh sweet! And just past Route 1 is the Oceania Gym.",
+            "variable": "RIVAL_NAME"
+        },
+        {
+            "type" : "text_vars",
+            "value": "RIVAL_NAME: Race you there PLAYER_NAME! See ya!",
+            "variables":[
+                "RIVAL_NAME",
+                "PLAYER_NAME"
+            ]
+
+        },
+        {
+            "type": "text",
+            "value":". . ."
+        },
+        {
+            "type" : "text",
+            "value": "Professor Spruce: Wait! Damn. He is always in such a rush. Why don't you say goodbye to your mom before you go"
+
+        },
+        {
+            "type" : "option_tree",
+            "value": "What would you like to do?",
+            "required": 1,
+            "tree": [
+                {
+                    "choice": 1,
+                    "required": true,
+                    "locked": false,
+                    "proceed": false,
+                    "value": "Visit mom",
+                    "path": [
+                        {
+                            "type" : "text",
+                            "value" : "Mom: Oh your back!"
+                        },
+                        {
+                            "type" : "text",
+                            "value" : "Mom: Let me see your pokemon."
+                        },
+                        {
+                            "type" : "text_var",
+                            "value" : "Mom: Wow you chose a STARTER_NAME. It's so cute!",
+                            "variable" : "STARTER_NAME"
+                        },
+                        {
+                            "type" : "text",
+                            "value" : "Mom: Well, you probably should get going now."
+                        },
+                        {
+                            "type" : "text",
+                            "value" : "Mom: Here are some Pokeballs to help you make some new friends."
+                        },
+                        {
+                            "type" : "text",
+                            "value" : "Mom: I'm gonna miss you! Come back anytime to visit. Bye!"
+                        }   
+                    ]
+                },
+                {
+                    "choice": 2,
+                    "required": false,
+                    "locked": false,
+                    "proceed": false,
+                    "value": "Talk to the Professor",
+                    "path": [
+                        {
+                            "type" : "text",
+                            "value" : "Professor Spruce: Aren't Pokemon amazing?"
+                        },
+                        {
+                            "type" : "text",
+                            "value" : "Professor Spruce: You are going to have a great journey! Don't forget to say good bye to your mom!"
+                        }
+                    ]
+                },
+                {
+                    "choice": 3,
+                    "required": false,
+                    "locked": false,
+                    "proceed": false,
+                    "value": "Talk to your neighbor",
+                    "path": [
+                        {
+                            "type" : "text_vars",
+                            "value" : "RIVAL_NAME's Mom: Oh hey PLAYER_NAME! Where's RIVAL_NAME?",
+                            "variables": [
+                                "RIVAL_NAME",
+                                "PLAYER_NAME"
+                            ]
+                        },
+                        {
+                            "type" : "text_vars",
+                            "value" : "RIVAL_NAME's Mom: Oh he ran off already? That's quite like his father",
+                            "variables": [
+                                "RIVAL_NAME"
+                            ]
+                        },
+                        {
+                            "type" : "text_vars",
+                            "value" : "RIVAL_NAME's Mom: Well, good luck on your journey! I wish you the best of luck",
+                            "variables": [
+                                "RIVAL_NAME"
+                            ]
+                        }
+
+                    ]
+                },
+                {
+                    "choice": 3,
+                    "required": false,
+                    "locked": true,
+                    "proceed": true,
+                    "value": "Proceed to Route 1",
+                    "path": [
+                    ]
+                }
+            ]
+
+        },
+        {
+            "type": "text",
+            "value":"You went to Route 1"
+        }
+    ]
+}
